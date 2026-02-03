@@ -11,7 +11,7 @@ const partners = [
 
 export const Integrations: React.FC = () => {
   return (
-    <Section className="border-t border-white/5 bg-black">
+    <Section id="integrations" className="border-t border-white/5 bg-black">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Default agents</h2>
         <p className="text-gray-400">Dart supports integrating with any 3rd party agent ecosystem.</p>

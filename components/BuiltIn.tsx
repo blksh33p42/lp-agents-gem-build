@@ -1,6 +1,7 @@
 import React from 'react';
 import { Section } from './ui/Section';
-import { CheckCircle2, Bot } from 'lucide-react';
+import { CheckCircle2, Bot, ArrowRight } from 'lucide-react';
+import { Button } from './ui/Button';
 
 export const BuiltIn: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ export const BuiltIn: React.FC = () => {
               Dart AI is our built-in project management agent that comes with every workspace. It supports tasks from creation and progress tracking to managing deadlines and team communication.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-6">
                <div className="flex items-start space-x-3">
                  <CheckCircle2 className="w-6 h-6 text-brand-400 shrink-0 mt-1" />
                  <div>
@@ -35,6 +36,14 @@ export const BuiltIn: React.FC = () => {
                    <h4 className="font-semibold text-white">Context Aware</h4>
                    <p className="text-sm text-gray-400 mt-1">Understands your project structure, priorities, and team velocity.</p>
                  </div>
+               </div>
+               
+               {/* Contextual CTA */}
+               <div className="pt-4">
+                  <Button variant="secondary" className="group">
+                    Explore Dart AI
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
                </div>
             </div>
           </div>

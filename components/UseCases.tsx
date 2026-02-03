@@ -35,7 +35,7 @@ const cases = [
 
 export const UseCases: React.FC = () => {
   return (
-    <Section className="bg-dark-bg">
+    <Section id="use-cases" className="bg-dark-bg">
       <div className="mb-16">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white tracking-tight">Flexible use cases</h2>
         <p className="text-gray-400 text-lg max-w-2xl">Adapt agents to any department. From engineering to sales, automation scales with your team.</p>

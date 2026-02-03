@@ -9,10 +9,11 @@ import { Setup } from './components/Setup';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
+import { CTAStrip } from './components/CTAStrip';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-dark-bg text-white font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-dark-bg text-white font-sans selection:bg-brand-500/30">
       <Navbar />
       <main>
         <Hero />
@@ -21,12 +22,8 @@ const App: React.FC = () => {
         <BuiltIn />
         <Integrations />
         <Setup />
-        <div className="bg-dark-surface/50 py-16 text-center">
-            <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-4">Scalable by design</h2>
-                <p className="text-gray-400 max-w-xl mx-auto">Create multiple agents tailored to different projects or teams, ensuring your entire organization runs on autopilot.</p>
-            </div>
-        </div>
+        {/* Replaced simple div with dedicated CTA Strip */}
+        <CTAStrip />
         <Testimonials />
         <FAQ />
       </main>
