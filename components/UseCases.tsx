@@ -8,42 +8,42 @@ const cases = [
     title: 'Design assistant',
     description: 'Automate creative production with design-focused agent workflows that organize assets and feedback.',
     color: 'text-purple-400',
-    bg: 'bg-purple-400/10'
+    bg: 'bg-purple-500/10'
   },
   {
     icon: Code,
     title: 'Dev support agent',
     description: 'Generate or review code based on context from assigned tasks, streamlining PR reviews.',
     color: 'text-blue-400',
-    bg: 'bg-blue-400/10'
+    bg: 'bg-blue-500/10'
   },
   {
     icon: Megaphone,
     title: 'Marketing agent',
     description: 'Have agents draft and post marketing material across all of your channels automatically.',
     color: 'text-pink-400',
-    bg: 'bg-pink-400/10'
+    bg: 'bg-pink-500/10'
   },
   {
     icon: Search,
     title: 'Sales research agent',
     description: 'Surface qualified leads, analyze buyer intent, and enrich CRM records with contextual insights.',
     color: 'text-emerald-400',
-    bg: 'bg-emerald-400/10'
+    bg: 'bg-emerald-500/10'
   }
 ];
 
 export const UseCases: React.FC = () => {
   return (
-    <Section className="bg-gradient-to-b from-dark-bg to-dark-surface">
+    <Section className="bg-dark-bg">
       <div className="mb-16">
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">Flexible use cases</h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white tracking-tight">Flexible use cases</h2>
         <p className="text-gray-400 text-lg max-w-2xl">Adapt agents to any department. From engineering to sales, automation scales with your team.</p>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {cases.map((item, index) => (
-          <div key={index} className="flex flex-col p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-colors">
+          <div key={index} className="flex flex-col p-6 rounded-2xl border border-dark-border bg-dark-card hover:border-white/10 transition-colors">
             <div className={`w-12 h-12 rounded-full ${item.bg} ${item.color} flex items-center justify-center mb-6`}>
               <item.icon className="w-5 h-5" />
             </div>

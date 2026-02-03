@@ -26,8 +26,8 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <a href="#" className="flex items-center space-x-2 group">
-              {/* Logo placeholder */}
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+              {/* Logo placeholder - Updated color */}
+              <div className="w-8 h-8 rounded-lg bg-brand-gradient flex items-center justify-center shadow-glow">
                 <span className="text-white font-bold text-xl">D</span>
               </div>
               <span className="text-xl font-bold tracking-tight text-white group-hover:text-gray-200 transition-colors">Dart</span>
