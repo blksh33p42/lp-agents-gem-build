@@ -1,6 +1,7 @@
 import React from 'react';
 import { Section } from './ui/Section';
 import { Zap, Settings, Share2 } from 'lucide-react';
+import { Reveal } from './ui/Reveal';
 
 const features = [
   {
@@ -28,24 +29,28 @@ export const Features: React.FC = () => {
   return (
     <Section id="features" className="border-t border-dark-border">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white tracking-tight">Agent-driven task automation</h2>
-        <p className="text-gray-400 text-lg">Configure exactly how and when your agents work to eliminate repetitive administrative overhead.</p>
+        <Reveal width="100%">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white tracking-tight">Agent-driven task automation</h2>
+          <p className="text-gray-400 text-lg">Configure exactly how and when your agents work to eliminate repetitive administrative overhead.</p>
+        </Reveal>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
         {features.map((feature, index) => (
-          <div key={index} className="group relative p-8 rounded-2xl bg-dark-card border border-dark-border hover:border-white/10 transition-all duration-300 hover:-translate-y-1">
-            <div className={`absolute top-0 left-0 w-full h-1 rounded-t-2xl bg-gradient-to-r ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
-            
-            <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform duration-300">
-              <feature.icon className="w-6 h-6 text-brand-400" />
+          <Reveal key={index} delay={index * 100} className="h-full">
+            <div className="group relative p-8 rounded-2xl bg-dark-card border border-dark-border hover:border-white/10 transition-all duration-300 hover:-translate-y-1 h-full">
+              <div className={`absolute top-0 left-0 w-full h-1 rounded-t-2xl bg-gradient-to-r ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+              
+              <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform duration-300">
+                <feature.icon className="w-6 h-6 text-brand-400" />
+              </div>
+              
+              <h3 className="text-xl font-bold mb-3 text-white">{feature.title}</h3>
+              <p className="text-gray-400 leading-relaxed">
+                {feature.description}
+              </p>
             </div>
-            
-            <h3 className="text-xl font-bold mb-3 text-white">{feature.title}</h3>
-            <p className="text-gray-400 leading-relaxed">
-              {feature.description}
-            </p>
-          </div>
+          </Reveal>
         ))}
       </div>
     </Section>
