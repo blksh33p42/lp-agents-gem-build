@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, PlayCircle, FileText } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { Button } from './ui/Button';
 import { Section } from './ui/Section';
 import { Badge } from './ui/Badge';
