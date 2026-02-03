@@ -40,43 +40,9 @@ export const BuiltIn: React.FC = () => {
           </div>
 
           <div className="relative">
-             {/* Mock Chat Interface */}
-             <div className="bg-dark-surface border border-white/10 rounded-2xl shadow-2xl p-6 max-w-md mx-auto">
-                <div className="space-y-6">
-                  {/* User Message */}
-                  <div className="flex items-end justify-end space-x-2">
-                    <div className="bg-blue-600 text-white px-4 py-2 rounded-2xl rounded-tr-sm text-sm">
-                      What's the status of the Q3 Roadmap?
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-gray-600 border border-white/10 overflow-hidden">
-                       <img src="https://picsum.photos/32/32?random=1" alt="User" />
-                    </div>
-                  </div>
-
-                  {/* AI Message */}
-                  <div className="flex items-end justify-start space-x-2">
-                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-xs font-bold text-white">D</div>
-                     <div className="bg-white/10 text-gray-200 px-4 py-3 rounded-2xl rounded-tl-sm text-sm border border-white/5 w-full">
-                       <p className="mb-2">The Q3 Roadmap is <strong>75% complete</strong>.</p>
-                       <ul className="list-disc pl-4 space-y-1 text-gray-400 text-xs">
-                         <li>Backend migration: Done</li>
-                         <li>UI Refresh: In Review</li>
-                         <li>Mobile App: <span className="text-yellow-400">At Risk (Deadline: Fri)</span></li>
-                       </ul>
-                     </div>
-                  </div>
-                </div>
-                
-                {/* Input Area */}
-                <div className="mt-6 relative">
-                  <input 
-                    type="text" 
-                    placeholder="Ask Dart anything..." 
-                    className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-colors"
-                    disabled
-                  />
-                  <div className="absolute right-3 top-3 text-gray-500">↵</div>
-                </div>
+             {/* Placeholder for Chat Interface */}
+             <div className="w-full max-w-md mx-auto aspect-[4/5] bg-gradient-to-br from-[#1e293b] to-[#0f172a] rounded-2xl border border-white/10 flex items-center justify-center shadow-2xl">
+                <span className="text-gray-500 font-medium">UI Mockup / Screenshot</span>
              </div>
           </div>
         </div>

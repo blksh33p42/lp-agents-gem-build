@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from './ui/Section';
-import { Sliders, MousePointerClick, ShieldCheck, ListChecks } from 'lucide-react';
+import { Sliders, MousePointerClick, ShieldCheck } from 'lucide-react';
 
 const steps = [
   {
@@ -45,40 +45,10 @@ export const Setup: React.FC = () => {
           </div>
         </div>
 
-        {/* Visual Checklist Card */}
-        <div className="bg-dark-card border border-white/10 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-[60px] pointer-events-none"></div>
-          
-          <div className="flex items-center space-x-3 mb-6 border-b border-white/5 pb-4">
-            <ListChecks className="text-blue-500" />
-            <span className="font-mono text-sm text-gray-300">SETUP_CHECKLIST.md</span>
-          </div>
-
-          <div className="space-y-4">
-             {[
-               "Go to Settings > Agents",
-               "Click 'Add Agent'",
-               "Choose Default or Custom",
-               "Define Triggers & Actions"
-             ].map((item, idx) => (
-               <div key={idx} className="flex items-center space-x-4 p-3 rounded-lg hover:bg-white/5 transition-colors cursor-default group">
-                 <div className="w-6 h-6 rounded border border-white/20 flex items-center justify-center text-xs text-transparent group-hover:text-white/50 transition-colors">
-                   {idx + 1}
-                 </div>
-                 <span className="text-gray-300 group-hover:text-white transition-colors">{item}</span>
-               </div>
-             ))}
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-white/5">
-             <div className="w-full bg-white/5 rounded-full h-2 overflow-hidden">
-               <div className="bg-blue-500 w-3/4 h-full rounded-full"></div>
-             </div>
-             <div className="flex justify-between text-xs text-gray-500 mt-2">
-               <span>Progress</span>
-               <span>75%</span>
-             </div>
-          </div>
+        {/* Visual Checklist Card - Placeholder */}
+        <div className="w-full aspect-[4/3] bg-gradient-to-br from-[#1e293b] to-[#0f172a] rounded-2xl border border-white/10 flex items-center justify-center shadow-2xl relative overflow-hidden">
+             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-[60px] pointer-events-none"></div>
+             <span className="text-gray-500 font-medium relative z-10">UI Mockup / Screenshot</span>
         </div>
       </div>
     </Section>
