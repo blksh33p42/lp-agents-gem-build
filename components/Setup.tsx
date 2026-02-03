@@ -22,7 +22,7 @@ const steps = [
 
 export const Setup: React.FC = () => {
   return (
-    <Section className="bg-dark-bg">
+    <Section className="">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white tracking-tight">Easy setup and management</h2>
@@ -46,7 +46,7 @@ export const Setup: React.FC = () => {
         </div>
 
         {/* Visual Checklist Card - Placeholder */}
-        <div className="w-full aspect-[4/3] bg-dark-surface rounded-2xl border border-dark-border flex items-center justify-center shadow-2xl relative overflow-hidden">
+        <div className="w-full aspect-[4/3] bg-dark-surface/80 backdrop-blur-sm rounded-2xl border border-dark-border flex items-center justify-center shadow-2xl relative overflow-hidden">
              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-500/10 rounded-full blur-[60px] pointer-events-none"></div>
              <span className="text-gray-500 font-medium relative z-10">UI Mockup / Screenshot</span>
         </div>

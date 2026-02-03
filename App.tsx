@@ -10,19 +10,20 @@ import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { CTAStrip } from './components/CTAStrip';
+import { ScrollBackground } from './components/ScrollBackground';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-dark-bg text-white font-sans selection:bg-brand-500/30">
+    <div className="min-h-screen text-white font-sans selection:bg-brand-500/30 relative">
+      <ScrollBackground />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <Features />
         <UseCases />
         <BuiltIn />
         <Integrations />
         <Setup />
-        {/* Replaced simple div with dedicated CTA Strip */}
         <CTAStrip />
         <Testimonials />
         <FAQ />

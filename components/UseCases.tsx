@@ -35,7 +35,7 @@ const cases = [
 
 export const UseCases: React.FC = () => {
   return (
-    <Section id="use-cases" className="bg-dark-bg">
+    <Section id="use-cases" className="">
       <div className="mb-16">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white tracking-tight">Flexible use cases</h2>
         <p className="text-gray-400 text-lg max-w-2xl">Adapt agents to any department. From engineering to sales, automation scales with your team.</p>
@@ -43,7 +43,7 @@ export const UseCases: React.FC = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {cases.map((item, index) => (
-          <div key={index} className="flex flex-col p-6 rounded-2xl border border-dark-border bg-dark-card hover:border-white/10 transition-colors">
+          <div key={index} className="flex flex-col p-6 rounded-2xl border border-dark-border bg-dark-card/50 backdrop-blur-sm hover:border-white/10 transition-colors">
             <div className={`w-12 h-12 rounded-full ${item.bg} ${item.color} flex items-center justify-center mb-6`}>
               <item.icon className="w-5 h-5" />
             </div>

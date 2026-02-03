@@ -19,7 +19,7 @@ const testimonials = [
 
 export const Testimonials: React.FC = () => {
   return (
-    <Section className="bg-dark-bg">
+    <Section className="">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold mb-4">Loved by teams</h2>
         <p className="text-gray-400">See what others are saying about Dart.</p>
@@ -27,7 +27,7 @@ export const Testimonials: React.FC = () => {
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {testimonials.map((t, i) => (
-          <div key={i} className="bg-gradient-to-br from-white/5 to-white/[0.02] p-8 rounded-3xl border border-white/5 relative">
+          <div key={i} className="bg-gradient-to-br from-white/10 to-white/[0.02] backdrop-blur-md p-8 rounded-3xl border border-white/5 relative">
             <Quote className="absolute top-8 right-8 w-8 h-8 text-white/10" />
             
             <p className="text-lg text-gray-300 italic mb-8 relative z-10 leading-relaxed">"{t.quote}"</p>
